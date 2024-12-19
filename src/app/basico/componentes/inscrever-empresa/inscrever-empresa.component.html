@@ -1,0 +1,52 @@
+<div class="bg">
+  <div class="child">
+    <div nz-col>
+      <h1 style="text-align: center; margin-bottom: 20px;">Cadastro de Empresa</h1>
+    </div>
+    <form nz-form [formGroup]="validarForm" (ngSubmit)="enviaFormulario()">
+      <nz-form-item>
+        <nz-form-control nzHasFeedback nzErrorTip="Por favor, insira um E-mail válido">
+          <input nz-input placeholder="E-mail" formControlName="email" id="email" />
+        </nz-form-control>
+      </nz-form-item>
+      
+      <nz-form-item>
+        <nz-form-control nzHasFeedback nzErrorTip="Por favor, insira uma senha válida">
+          <input nz-input type="password" placeholder="Senha" formControlName="password" id="password" />
+        </nz-form-control>
+      </nz-form-item>
+      
+      <nz-form-item>
+        <nz-form-control nzHasFeedback nzErrorTip="As senhas devem coincidir">
+          <input nz-input type="password" placeholder="Confirmar Senha" formControlName="verificarPassword" id="verificarPassword" />
+        </nz-form-control>
+      </nz-form-item>
+      
+      <nz-form-item>
+        <nz-form-control nzHasFeedback nzErrorTip="Por favor, insira um Nome válido">
+          <input nz-input placeholder="Nome" formControlName="nome" id="nome" />
+        </nz-form-control>
+      </nz-form-item>
+      
+      <nz-form-item>
+        <nz-form-control nzHasFeedback nzErrorTip="Por favor, insira um Endereço válido">
+          <input nz-input placeholder="Endereço" formControlName="endereco" id="endereco" />
+        </nz-form-control>
+      </nz-form-item>
+      
+      <nz-form-item>
+        <nz-form-control nzHasFeedback nzErrorTip="Por favor, insira um Telefone válido">
+          <input nz-input placeholder="Telefone" formControlName="telefone" id="telefone" />
+        </nz-form-control>
+      </nz-form-item>
+      
+      <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'" [disabled]="!validarForm.valid">
+        Registrar
+      </button>
+      
+      <p style="text-align: center; margin-top: 10px;">
+        Ou <a routerLink="/login">Faça login agora!</a>
+      </p>
+    </form>
+  </div>
+</div>

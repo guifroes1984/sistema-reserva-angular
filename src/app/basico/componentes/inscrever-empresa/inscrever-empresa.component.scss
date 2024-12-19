@@ -1,0 +1,70 @@
+[nz-form] {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.phone-select {
+  width: 70px;
+}
+
+//.regiter-are {
+//  margin-bottom: 8px;
+//}
+
+.child {
+  padding: 30px;
+  position: relative; 
+  width: 100%; 
+  max-width: 380px; 
+  background-color: white;
+  margin: 50px auto;
+  box-shadow: 1px 1px 15px -7px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+nz-form-control {
+  min-width: 280px;
+}
+
+.parent {
+  width: 100%;
+  min-height: 100vh; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-margin {
+  margin-bottom: 16px;
+}
+
+.login-form-button {
+  width: 100%;
+}
+
+
+@media (max-width: 576px) {
+  .child {
+    padding: 20px; 
+  }
+  
+  h1 {
+    font-size: 20px; 
+    text-align: center;
+  }
+  
+  button {
+    font-size: 14px; 
+  }
+}
+
+.imgDiv {
+  width: 100%;
+  vertical-align: middle;
+  margin-bottom: 40px;
+}
+
+.bg {
+  background-color: #f5f7f9;
+  padding: 20px; 
+}

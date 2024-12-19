@@ -13,6 +13,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DemoNgZorroAntModule } from './DemoNgZorroAntModule';
+import { InscreverClienteComponent } from './basico/componentes/inscrever-cliente/inscrever-cliente.component';
+import { InscreverEmpresaComponent } from './basico/componentes/inscrever-empresa/inscrever-empresa.component';
 
 registerLocaleData(pt);
 
@@ -20,7 +22,9 @@ registerLocaleData(pt);
   declarations: [
     AppComponent,
     LoginComponent,
-    SingupComponent
+    SingupComponent,
+    InscreverClienteComponent,
+    InscreverEmpresaComponent
   ],
   imports: [
     BrowserModule,
