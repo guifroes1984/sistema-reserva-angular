@@ -16,8 +16,13 @@
   float: right;
 }
 
-.login-form-button {
-  width: 100%;
+// .login-form-button {
+//   width: 100%;
+// }
+
+.login-form-button:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .child {
@@ -47,3 +52,4 @@ button {
 .bg {
   background-color: #f5f7f9;
 }
+
